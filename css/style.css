@@ -5,16 +5,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #ffffff !important;
     font-family: poppins, sans-serif;
     font-size: 15px;
-    color: rgb(60, 52, 52);
+    color: #5D371A;
 }
 /* main-header start */
 [data-target="#mainMenu"] {
     position: relative;
     z-index: 999;
+}
+
+#navbar {
+    background: #ffffff;
 }
 
 #mainMenu li > a {
@@ -72,12 +80,13 @@ body {
 
 .main-header {
     position: fixed;
-    top: 25px;
+    top: 0;
     left: 0;
     z-index: 99;
     width: 100%;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    padding: 10px;
 }
 
 .main-header.fixed-nav {
@@ -205,14 +214,58 @@ body {
 }
 
 h1{
-    color: #5D371A;
+    font-size: 45px;
+}
+
+section{
+    height: 100vh;
+    padding: 100px;
+}
+
+.home{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+@media (max-width: 1080px) {
+    section{
+        height: 100%;
+        padding: 100px 20px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 span{
     color: #995F1D;
 }
 
-.page-content{
-    padding: 20px;
-    margin: 100px auto;
+.btn {
+    background-color: #995f1d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #7d4a1a;
+    color: #fff;
+}
+
+.about {
+    background-color: #f6e6d7;
+    text-align: center;
+    justify-content: center;
 }
