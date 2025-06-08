@@ -75,20 +75,71 @@
                 </div>
             </section>
 
-            <section class="about" id="about">
+            <section class="about align-items-center" id="about">
                 <div class="container">
-                    <div class="row">
+                    <div class="row d-flex align-items-center justify-content-between">
                         <div class="col text-center">
-                            <h1 class="display-4 fw-bold">About <span>COPA</span></h1>
-
+                            <!-- <h2 class="display-4 fw-bold">About Us</h2> -->
+                            <p class="lead">COPA memanfaatkan hasil pertanian lokal dengan membeli cokelat
+                                berkualitas tinggi langsung dari petani di Temanggung dan kelapa segar dari
+                                petani di Banyumas. Dengan begitu, COPA tidak hanya menghadirkan produk minuman
+                                fungsional yang sehat dan lezat, tetapi juga membantu meningkatkan pendapatan
+                                petani lokal dan memperkuat perekonomian daerah.
+                            </p>
+                        </div>
+                        <div class="col p-5">
+                            <div
+                                id="carouselExampleIndicators"
+                                class="carousel slide"
+                                data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0"
+                                        class="active"
+                                        aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/petani_kakao.jpg" class="d-block w-100" alt="kakako">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/petani_kelapa.jpg" class="d-block w-100" alt="kelapa">
+                                    </div>
+                                </div>
+                                <button
+                                    class="carousel-control-prev"
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button
+                                    class="carousel-control-next"
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
         </main>
 
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="./js/navbar.js"></script>
+        <script src="./js/scripts.js"></script>
     </body>
 </html>
