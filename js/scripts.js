@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('#mainMenu .nav-link');
     const sections = [];
 
-    // Simpan referensi ke setiap section yang ditautkan
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
         if (href.startsWith('#')) {
@@ -17,12 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Tambahkan event listener scroll
     window.addEventListener('scroll', function () {
         let current = '';
 
         sections.forEach(sec => {
-            // Tambahkan offset agar link aktif sedikit lebih awal
             if (window.scrollY >= sec.element.offsetTop - 200) {
                 current = sec.id;
             }
@@ -36,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Tambahkan event listener click agar manual juga tetap bekerja
     navLinks.forEach(link => {
         link.addEventListener('click', function () {
             navLinks.forEach(l => l.classList.remove('active'));

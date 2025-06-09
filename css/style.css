@@ -1,8 +1,3 @@
-/**
- * index.scss
- * - Add any styles you want here!
- */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 html {
@@ -12,10 +7,9 @@ html {
 body {
     background: #ffffff !important;
     font-family: poppins, sans-serif;
-    font-size: 15px;
     color: #5D371A;
 }
-/* main-header start */
+
 [data-target="#mainMenu"] {
     position: relative;
     z-index: 999;
@@ -112,9 +106,99 @@ body {
     max-width: 100px;
     animation: fadeInLeft 0.4s both 0.4s;
 }
-/* main-header end */
+
+
+h1{
+    font-size: 45px;
+}
+
+section {
+    padding: 100px 20px;
+}
+
+
+.home{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.about img{
+    height: auto;
+}
+
+span{
+    color: #995F1D;
+}
+
+.btn {
+    background-color: #995f1d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #7d4a1a;
+    color: #fff;
+}
+
+.card {
+    border: 1px solid #ddd;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: #979797 0px 0px 7px;
+}
+
+
+footer section{
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#product-img {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+/* Animation for rotating left-right on hover */
+@keyframes rotate-swing {
+    0% { transform: rotate(5deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(5deg); }
+}
+
+#product-img:hover {
+    animation: rotate-swing 5s infinite;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products .row{
+        flex-direction: row;
+    }
+}
+
+
 @media (max-width: 991px) {
-    /*header starts*/
     .collapse.in {
         display: block !important;
         padding: 0;
@@ -152,7 +236,6 @@ body {
         border-radius: 0;
     }
 
-    /**/
     .main-header .navbar-toggler .icon-bar {
         background-color: #995f1d;
         margin: 0 auto 6px;
@@ -209,76 +292,16 @@ body {
     .main-header .navbar-toggler:focus .icon-bar {
         background-color: #995f1d;
     }
-
-    /*header ends*/
 }
 
-h1{
-    font-size: 45px;
-}
-
-section{
-    height: 100vh;
-    padding: 100px;
-}
-
-.home{
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-}
 
 @media (max-width: 1080px) {
-    section{
+    section {
         height: 100%;
-        padding: 100px 20px;
-    }
-
-    .row{
-        display: flex;
-        flex-direction: column;
     }
 
     img {
         max-width: 100%;
         height: auto;
     }
-}
-
-span{
-    color: #995F1D;
-}
-
-.btn {
-    background-color: #995f1d;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #7d4a1a;
-    color: #fff;
-}
-
-.about {
-    display: flex;
-    min-height: 100vh;
-}
-
-.about img{
-    /* max-width: 100%; */
-    height: auto;
-}
-
-.carousel {
-    /* width: 100%; */
-    /* max-width: 500px; */
-}
-
-.carousel-inner img {
-    /* width: 100%; */
 }
